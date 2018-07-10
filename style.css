@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+main {
+    height: 100vh;
+    margin-top: 100vh;
+    background-color:darkturquoise;
+    position: relative;
+    z-index: 2;
+}
+/*.menu {
+    text-align: center;
+    padding-top: 100px;
+}*/
+.Bird {
+    width: 100%;
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    overflow-x: hidden;
+}
+nav {
+    position: absolute;
+    top: 3%;
+    right: 7%;
+    font-size: 8rem;
+    z-index: 1;
+}
+hgroup {
+    position: absolute;
+    top: 20%;
+    left: 5vh;
+    z-index: 1;
+}
+.name-main-elem {
+    font-family: 'Roboto', sans-serif;
+    font-size: 400%;
+    text-transform: uppercase;
+}
+.main-elem {
+   font-family: 'Roboto', sans-serif;
+   font-size: 400%;
+   font-weight: 200; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+.second-elem { 
+   font-family: 'Shadows Into Light', cursive;
+   font-size: 170%;
+   padding-right: 5%;
+}
+.arrow {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: solid 5px;
+    border-radius: 100%;
+    border-color: black;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0 -20px 0 black, 0 20px 0 black;
+    overflow: hidden;
+    transition: 1s ease;
+}
+.arrow:hover {
+    background-color: #111;
+    color: #FFF;
+    text-shadow: 0 -20px 0 #FFF, 0 20px 0 #FFF;
+}
+.fa-angle-down {
+    animation: arrow 1.6s infinite linear;
+}
+@media (min-width: 1200px) {
+    .Bird {
+        width: 70%;
+        bottom: 15%;
+        right: 2%;
+    }
+    hgroup {
+       top: 13%;
+       left: 5%;
+    }
+    .arrow:hover {
+        cursor: pointer;
+    }
+}
+@media (max-width: 1200px) {
+    .Bird {
+        width: 70%;
+        bottom: 15%;
+        right: 2%;
+    }
+    hgroup {
+        top: 13%;
+        left: 5%;
+    }
+    .arrow:hover {
+       cursor: pointer; 
+    }
+}
+@media (max-width: 999px) {
+    .Bird {
+        width: 90%;
+        bottom: 15%;
+        right: 0;
+    }
+    hgroup {
+        top: 10%;
+        left: 6%;
+    }
+}
+@media (max-width: 760px) {
+    .Bird {
+        width: 75%;
+        bottom: 20%;
+        right: 5%;
+    }
+    hgroup {
+        top: 10%;
+    } 
+}
+@media (max-width: 450px) {
+    .Bird {
+        width: 115%;
+        right: -15%;
+    }
+    hgroup {
+        font-size: 80%;
+        top: 15%;
+    }
+    nav {
+        font-size: 40px;
+    }
+}
+@keyframes arrow {
+    0% {
+        transform: translateY(-80px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(80px)
+    }
+}
+
+
+
+
+
