@@ -1,0 +1,46 @@
+main {
+    
+}
+.computer {
+    position: relative;
+    width: 400px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-43%);
+
+}
+.all-text-about {
+    position: absolute;
+    z-index: 3;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF;
+    
+}   
+.title-about {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px #111 solid;
+}
+.second-title-about {
+    font-size: 23px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.text-about {
+    font-size: 15px;
+}
+.exit-about {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: darkred;
+    text-transform: uppercase;
+    
+}

@@ -1,0 +1,119 @@
+
+@media (min-width: 1200px) {
+    .Bird {
+        width: 70%;
+        bottom: 15%;
+        right: 2%;
+    }
+    hgroup {
+       top: 13%;
+       left: 5%;
+    }
+    .arrow:hover {
+        cursor: pointer;
+    }
+   /* menu {
+        background-color: black;
+    }
+    .about {
+        max-width: 1000px;
+        
+    }*/
+}
+@media (max-width: 1200px) {
+    .Bird {
+        width: 70%;
+        bottom: 15%;
+        right: 2%;
+    }
+    hgroup {
+        top: 13%;
+        left: 5%;
+    }
+    .arrow:hover {
+       cursor: pointer; 
+    }
+}
+@media (max-width: 999px) {
+    .Bird {
+        width: 90%;
+        bottom: 15%;
+        right: 0;
+    }
+    hgroup {
+        top: 10%;
+        left: 6%;
+    }
+}
+@media (max-width: 999px) and (orientation: landscape) {
+    .Bird {
+        width: 60%;
+        bottom: 5%;
+        right: -15%;
+    }
+      hgroup {
+        top: 10%;
+        left: 6%;
+    }
+    nav {
+        font-size: 50px;
+        right: 3%;
+        top: 5%;
+    }
+}
+@media (max-width: 760px) {
+    .Bird {
+        width: 75%;
+        bottom: 20%;
+        right: 5%;
+    }
+    hgroup {
+        top: 10%;
+    } 
+}
+@media (max-width: 760px) and (orientation: landscape) {
+    .Bird {
+        width: 65%;
+        bottom: 0;
+        right: -15%;
+    }
+    hgroup {
+        top: 10%;
+        font-size: 9px;
+    } 
+}
+@media (max-width: 600px) and (orientation: landscape) {
+    .Bird {
+        width: 65%;
+        bottom: 0;
+        right: -18%;
+    }
+    hgroup {
+        top: 10%;
+        font-size: 8px;
+    } 
+}
+@media (max-width: 450px) {
+    .Bird {
+        width: 115%;
+        right: -15%;
+    }
+    hgroup {
+        font-size: 80%;
+        top: 15%;
+    }
+    nav {
+        font-size: 40px;
+    }
+}
+@keyframes arrow {
+    0% {
+        transform: translateY(-80px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(80px)
+    }
+}

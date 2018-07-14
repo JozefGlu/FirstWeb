@@ -66,6 +66,7 @@ hgroup {
 }
 .arrow {
     position: absolute;
+    z-index: 1;
     width: 64px;
     height: 64px;
     border: solid 5px;
@@ -88,6 +89,49 @@ hgroup {
 .fa-angle-down {
     animation: arrow 1.6s infinite linear;
 }
+.computer {
+    position: relative;
+    width: 400px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-43%);
+
+}
+.all-text-about {
+    position: absolute;
+    z-index: 3;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF;
+    
+}   
+.title-about {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px #111 solid;
+}
+.second-title-about {
+    font-size: 23px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.text-about {
+    font-size: 15px;
+}
+.exit-about {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: darkred;
+    text-transform: uppercase;
+    
+}
 @media (min-width: 1200px) {
     .Bird {
         width: 70%;
@@ -101,6 +145,13 @@ hgroup {
     .arrow:hover {
         cursor: pointer;
     }
+   /* menu {
+        background-color: black;
+    }
+    .about {
+        max-width: 1000px;
+        
+    }*/
 }
 @media (max-width: 1200px) {
     .Bird {
@@ -127,6 +178,22 @@ hgroup {
         left: 6%;
     }
 }
+@media (max-width: 999px) and (orientation: landscape) {
+    .Bird {
+        width: 60%;
+        bottom: 5%;
+        right: -15%;
+    }
+      hgroup {
+        top: 10%;
+        left: 6%;
+    }
+    nav {
+        font-size: 50px;
+        right: 3%;
+        top: 5%;
+    }
+}
 @media (max-width: 760px) {
     .Bird {
         width: 75%;
@@ -135,6 +202,28 @@ hgroup {
     }
     hgroup {
         top: 10%;
+    } 
+}
+@media (max-width: 760px) and (orientation: landscape) {
+    .Bird {
+        width: 65%;
+        bottom: 0;
+        right: -15%;
+    }
+    hgroup {
+        top: 10%;
+        font-size: 9px;
+    } 
+}
+@media (max-width: 600px) and (orientation: landscape) {
+    .Bird {
+        width: 65%;
+        bottom: 0;
+        right: -18%;
+    }
+    hgroup {
+        top: 10%;
+        font-size: 8px;
     } 
 }
 @media (max-width: 450px) {
@@ -161,8 +250,6 @@ hgroup {
         transform: translateY(80px)
     }
 }
-
-
 
 
 
